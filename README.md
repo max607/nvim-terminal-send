@@ -8,6 +8,10 @@ require('lazy').setup({
     end,
 })
 
+-- open splits on the right and below
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
 -- alt + vim direction split navigation (normal mode)
 vim.keymap.set('n', '<M-h>', '<C-w>h', {noremap = true})
 vim.keymap.set('n', '<M-j>', '<C-w>j', {noremap = true})
