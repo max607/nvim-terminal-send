@@ -1,13 +1,25 @@
+# terminal-send
+
+A minimalist plugin with the nvim terminal at its core to interact with CLIs of programming languages like `R` and `Python`.
+
+## Usage
+
+`<leader>ts+motion`
+
+## Installation
+
+Install using your favorite package manager, e.g. [Lazy](https://github.com/folke/lazy.nvim):
+
 ```lua
 -- install package
 require('lazy').setup({
     'max607/nvim-terminal-send',
-    config = function()
-      local terminal_send = require('terminal-send')
-      terminal_send.setup()
-    end,
 })
+```
 
+## Helpful shortcuts
+
+```
 -- open splits on the right and below
 vim.opt.splitright = true
 vim.opt.splitbelow = true
