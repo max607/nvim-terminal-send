@@ -1,4 +1,4 @@
-local function send_to_terminal(t)
+function send_to_terminal(t)
   local a, b = '', ''
   if t:match('line') or t:match('char') then
     a,b = '[',']'
