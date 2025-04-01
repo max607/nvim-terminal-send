@@ -1,23 +1,31 @@
 # terminal-send
 
-A minimalist plugin with the nvim terminal at its core to interact with CLIs of programming languages like `R` and `Python`.
+A minimalist plugin to interact with CLIs of programming languages like `R` and `Python`.
 
 ## Usage
 
-`<leader>ts+motion`
+This package aims to integrate with the usual vim workflow.
+The basic setup is to open, e.g., an `R` script and a nvim terminal running `R` in split view.
+Now you can send arbitrary text from the script to the terminal with `<leader>ts` and a *motion*.
+
+Additional shortcuts are
+
+* `<leader>tf` for focusing a terminal, e.g., I you use several at once.
+* `<leader>tr` for re-sending the last code selection.
 
 ## Installation
 
 Install using your favorite package manager, e.g. [Lazy](https://github.com/folke/lazy.nvim):
 
 ```lua
--- install package
 require('lazy').setup({
     'max607/nvim-terminal-send',
 })
 ```
 
 ## Helpful shortcuts
+
+Here are some some shortcuts I would recommend for ease of use.
 
 ```
 -- open splits on the right and below
