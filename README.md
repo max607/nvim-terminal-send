@@ -25,7 +25,7 @@ require('lazy').setup({
 
 ## Helpful shortcuts
 
-Here are some some shortcuts I would recommend for ease of use.
+Here are some some shortcuts I recommend for ease of use.
 
 ```
 -- open splits on the right and below
