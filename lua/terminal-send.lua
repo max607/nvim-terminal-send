@@ -1,4 +1,4 @@
-function send_to_terminal(t)
+local function send_to_terminal(t)
   local a, b = '', ''
   if t:match('line') or t:match('char') then
     a,b = '[',']'
@@ -43,6 +43,9 @@ local function setup()
       vim.bo.buflisted = false
     end
   })
+
+  -- global function
+  _G.send_to_terminal = send_to_terminal
 
   -- key maps
   vim.keymap.set('n', '<leader>tf', ':let g:MyTerminal=b:terminal_job_id<cr>', {noremap = true})  -- focus terminal
