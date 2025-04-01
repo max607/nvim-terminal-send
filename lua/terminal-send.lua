@@ -52,3 +52,7 @@ local function setup()
   vim.keymap.set('x', '<leader>ts', ':lua send_to_terminal("visual")<cr>', {noremap = true, silent = true})
   vim.keymap.set('n', '<leader>tr', ':lua send_to_terminal("resend")<cr>', {noremap = true, silent = true})
 end
+
+return {
+  setup = setup,
+}
