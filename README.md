@@ -29,7 +29,7 @@ require('lazy').setup({
 
 Here are some some shortcuts I recommend for ease of use.
 
-```
+```lua
 -- open splits on the right and below
 vim.opt.splitright = true
 vim.opt.splitbelow = true
