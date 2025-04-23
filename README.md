@@ -2,6 +2,8 @@
 
 A minimalist plugin to interact with CLIs of programming languages like `R` and `Python`.
 
+https://github.com/user-attachments/assets/bb844130-b303-466f-aad9-c373c9273c46
+
 ## Usage
 
 This package aims to integrate with the usual vim workflow.
